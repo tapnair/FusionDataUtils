@@ -43,34 +43,24 @@ The results are returned as a typed dictionary as described in **Document** in t
 ## Result Format
 
 ### Document
->**Name**: Name of the active design
-> 
->**DesignFileId**: The id for the active document's DesignFile in the Fusion Data API
-> 
->**DesignFileVersionId**: The id for the active document's DesignFileVersion in the Fusion Data API
-> 
->**FolderId**: The id for the active document's parent Folder in the Fusion Data API
-> 
->**ProjectId**: The id for the active document's parent Project in the Fusion Data API
-> 
->**HubId**: The id for the active document's parent Hub in the Fusion Data API
-> 
->**AllComponents**: Array of ALL the components contained in the design, including those in referenced files
-> 
->**Components**: Array of only those Components that are defined within this file
+* **Name**: Name of the active design
+* **DesignFileId**: The id for the active document's DesignFile in the Fusion Data API
+* **DesignFileVersionId**: The id for the active document's DesignFileVersion in the Fusion Data API
+* **FolderId**: The id for the active document's parent Folder in the Fusion Data API
+* **ProjectId**: The id for the active document's parent Project in the Fusion Data API
+* **HubId**: The id for the active document's parent Hub in the Fusion Data API
+* **AllComponents**: Array of ALL the components contained in the design, including those in referenced files
+* **Components**: Array of only those Components that are defined within this file
 
 #### Note about the `Components` and `AllComponents` fields:
 * These are both arrays.
 * The values are as defined below in the Component results.
 
 ### Component
->**Name**: Name of the active design
-> 
->**f3dComponentId**: The id for the Component in the Fusion Client/Desktop API
-> 
->**ComponentId**: The id for the Component in the Fusion Data API
-> 
->**ComponentVersionId**: The id for the ComponentVersion in the Fusion Data API
+* **Name**: Name of the active design
+* **f3dComponentId**: The id for the Component in the Fusion Client/Desktop AP
+* **ComponentId**: The id for the Component in the Fusion Data API
+* **ComponentVersionId**: The id for the ComponentVersion in the Fusion Data API
 
 ## Sample Script
 Here is a simple script that demonstrates the usage of `get_fusion_data_ids_for_active_document()`
@@ -98,6 +88,7 @@ def run(context):
             ui.messageBox('Failed:\n{}'.format(traceback.format_exc()))
 ```
 
+See more in the main Fusion 360 script: `FusionDataUtils.py` 
 ## License
 Samples are licensed under the terms of the [MIT License](http://opensource.org/licenses/MIT). Please see the [LICENSE](LICENSE) file for full details.
 

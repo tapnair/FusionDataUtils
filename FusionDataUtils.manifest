@@ -1,0 +1,10 @@
+{
+	"autodeskProduct":	"Fusion360",
+	"type":	"script",
+	"author":	"Patrick Rainsberry",
+	"description":	{
+		"":	"Demo Script to compute Fusion Data APIs"
+	},
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true
+}

@@ -1,0 +1,9 @@
+__pycache__/
+.idea/
+.vscode/
+.DS_STORE
+.DS_Store
+venv
+.env
+
+sample_raw_PIM_string.json

@@ -1,16 +1,19 @@
-# Fusion Data API IDs from Fusion360 Client API
-A collection of utilities to assist in developing Fusion 360 Add-ins
+# Fusion Data Utils
+A collection of utilities to assist in developing Fusion 360 Add-ins that integrate with the 
+[Fusion Data API](
+    https://forge.autodesk.com/en/docs/fusiondata/v1/developers_guide/overview/
+)
 
 ![Cover](./resources/cover.png)
 
 # Usage
-Run this script and the Fusion Data IDs will be output to the text command palette.
+Run the main script in Fusion 360 and the Fusion Data IDs will be output to the text command palette.
 
 Use this script as reference for how to generate the IDs 
 needed to interact with the 
 [Fusion Data API](
     https://forge.autodesk.com/en/docs/fusiondata/v1/developers_guide/overview/
-) 
+)
 given the current capabilities of the Fusion 360 client API 
 (desktop, python API).  
 Note this should be obsolete in the coming months 
